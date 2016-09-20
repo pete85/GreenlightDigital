@@ -17,12 +17,43 @@ Greenlight Digital banner is a test project, in which a 1233x400 pixels HTML5 re
 * `GitHub`
 
 ## Development
+### HTML
 
+1. `createJS` libraries and configuration JS file included
 ```sh
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
 <script src="js/script.js"></script>
 ```
+2. Canvas added
+```sh
+<body onload="init();">
+	<canvas id="bannerCanvas" width="1233" height="400"></canvas>
+</body>
+```
+
+### CSS
+1. Sass project initiated (ONLY FOR DEMONSTRATION PURPOSES AS THERE WAS NO NEED TO USE SASS FOR THIS PROJECT DUE TO A VERY SMALL SIZE OF THE STYLESHEET)
+2. Canvas styled
+```sh
+#bannerCanvas {
+  width: 1233px;
+  max-width: 100%;
+}
+```
+```sh
+#bannerCanvas {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background: url("../images/bg.jpg");
+  background-size: contain;
+}
+```
+### JavaScript
 
 
 ## License
 MIT
+
+## Version
+0.0.1
