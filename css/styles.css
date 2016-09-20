@@ -66,3 +66,23 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+/* line 4, ../sass/_main.scss */
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* line 8, ../sass/_main.scss */
+#bannerCanvas {
+  width: 1233px;
+  max-width: 100%;
+}
+
+/* line 3, ../sass/_canvas.scss */
+#bannerCanvas {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background: url("../images/bg.jpg");
+  background-size: contain;
+}
