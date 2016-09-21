@@ -50,6 +50,40 @@ Greenlight Digital banner is a test project, in which a 1233x400 pixels HTML5 re
 }
 ```
 ### JavaScript
+1. Configuration JavaScript (`script.js`) created
+2. `function init()` implemented:
+* Variables declared
+* Stage instance created
+* Objects created and positioned inside the canvas
+* Objects animated
+
+EXAMPLE
+```sh
+	// // Assign box
+	box = new createjs.Shape();
+	box.graphics.beginFill("rgba(227, 226, 225, 0.8)").drawRect(0, 0, 400, 240);
+	box.x = 650;
+	box.y = 150;
+	stage.addChild(box);	
+
+	// Assign heading
+	heading = new createjs.Text("Find Electrolux Cooker, Oven & Hob parts", "26px box-regular", "#0d4597");
+	heading.x = 670;
+	heading.y = 170;
+	heading.lineWidth = 300;
+	heading.textAlign = "left";
+	stage.addChild(heading);
+	
+	// Animate box
+	createjs.Tween.get(box, { loop: false })
+		.to({ alpha: 0, y: 300 }, 0)
+	  	.to({ alpha: 1, y: 150 }, 2000, createjs.Ease.getPowInOut(10))
+
+	// Animate heading
+	createjs.Tween.get(heading, { loop: false })
+	  	.to({ alpha: 0, y: 170 }, 0)
+	  	.to({ alpha: 1, y: 170 }, 4000, createjs.Ease.getPowInOut(5))	
+```
 
 
 ## License
