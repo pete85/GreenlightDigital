@@ -1,6 +1,6 @@
-# Greenlight Digital banner
+# Responsive banner
 
-Greenlight Digital banner is a test project, in which a 1233x400 pixels HTML5 responsive banner was developed. Two `createJS` libraries where used to create canvas with animations. Those are `easelJS` and `tweenJS` 
+This is a test project, in which a 1233x400 pixels HTML5 responsive banner was developed. Two `createJS` libraries where used to create canvas with animations. Those are `easelJS` and `tweenJS` 
 
 ## Resources used
 
